@@ -1,0 +1,234 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vw;
+    overflow-x: hidden;
+}
+.navbar{
+    height: 70px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;  display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.navbar .heading{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.navbar .heading p{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: brown;
+    font-family:cursive;
+}
+.navbar .heading span{
+    font-size: 30px;
+    color: black;
+    font-weight: 900;
+
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav ul li{
+    position: relative;
+padding: 15px;
+margin-right: 10px;
+font-size: 20px;
+font-weight: 600;
+cursor: pointer;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav ul li:hover{
+    border-radius: 40px;
+    background-color: rgb(12, 12, 11);
+    color: orangered;
+}
+.active{
+    background-color: rgb(12, 12, 11);
+    border-radius: 40px;
+    color: orangered;
+}
+.info-sec i{
+    color: white;
+    cursor: pointer;
+}
+
+.info-sec input{
+    border-radius: 30px;
+   padding: 10px;
+   cursor: pointer;
+   border: none;
+   color: black;
+   outline: none;
+   background-color: rgb(167, 228, 170);
+}
+.info-sec input:focus-visible{
+    border-color: rgb(138, 73, 35);
+}
+.landing-page img{
+    width: 1350px;
+    position: relative;
+    top: -100px;
+    z-index: -1;
+}
+.title{
+position: absolute;
+top: 35%;
+left: 50%;
+transform: translateX(-50%);
+width: 400px;
+}
+.title p{
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+.title button{
+    padding: 20px 30px;
+ margin-top: 20px;
+ border: none;
+ border-radius: 50px;
+ cursor: pointer;
+ font-size: 20px;
+ color: rgb(0, 76, 255);
+ font-weight: 800;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ transition: 0.5 all ease-in;
+ background: linear-gradient(135deg , orange ,pink,red);
+ 
+}
+.title button:hover{
+transform: scale(1.2);
+}
+.menu-filter{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.menu-filter button{
+    padding: 10px 25px;
+    margin: 10px;
+    background: linear-gradient(to right,#84fab0 0% ,#8fd3f4 51%,#84fab0 100%);
+    border: none;
+    color: whitesmoke;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.contact-form{
+    background-color: black;
+    display: grid;
+    place-items: center;
+    /* width: 80%; */
+  
+}
+.contact-form p{
+color: #84fab0;
+padding: 20px;
+font-size: 50px;
+font-weight: 900;
+box-shadow: 0px 5px 10px 1px red;
+margin-top: 20px;
+letter-spacing: 3px;
+border-bottom: 1px solid orangered;
+border-radius: 20px;
+
+}
+.contact-form div{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+.contact-form  div input{
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 370px;
+    background-color: white;
+    color: orangered;
+    border: 2px solid orangered;
+}
+.contact-form div button img{
+    width: 20px;
+    position: relative;
+    top: 3px;
+    left: 4px;
+  
+
+}
+.contact-form div button{
+    margin-top: 20px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #8fd3f4;
+    font-size: 20px;
+    font-weight: 900;
+}
+.contact-form div button:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+    color: white;
+}
+.maindiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+text-align: center;      
+margin-bottom: 50px;}
+
+.main {
+  place-items: center; 
+    position: relative;
+    height: 100vh;
+}
+.main img{
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.main img:hover {
+    z-index: -1000;
+    opacity: 0.2;
+}
+
+.main p {
+    position: relative;
+    color: black;
+    z-index: -1;
+    top: -20%;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(157, 157, 170);
+}
+.social{
+    position: absolute;
+    right: 0%;
+    background-color: #8fd3f4;
+}
+.social h1{
+    position: relative;
+}
+.social img{
+  margin: 20px;
+  transition: 0.5 all linear;
+}
+.social img:hover{
+    transform: rotate(180deg);
+}
+
+    
